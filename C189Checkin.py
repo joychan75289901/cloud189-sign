@@ -101,7 +101,7 @@ def b64tohex(a):
         d += int2char(c << 2)
     return d
 
-
+ 
 def rsa_encode(j_rsakey, string):
     rsa_key = f"-----BEGIN PUBLIC KEY-----\n{j_rsakey}\n-----END PUBLIC KEY-----"
     pubkey = rsa.PublicKey.load_pkcs1_openssl_pem(rsa_key.encode())
